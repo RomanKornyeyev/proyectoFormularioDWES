@@ -5,7 +5,7 @@ namespace clasesPadre;
 
 use clasesTipo\Texto;
 use clasesTipo\Numero;
-use clasesTipo\Seleccion;
+use clasesTipo\Multiple;
 
 class Formulario
 {
@@ -14,19 +14,23 @@ class Formulario
     private $esValida = true;
 
     public function __construct($post){
-        
         //Si no tenemos post, inicializo cada valor como null para no tener problemas.
         //Si tenemos post, inicializo cada valor con el valor del post. (Ese Jorge ahi!)
         $nombre = isset($post['nombre']) ? $post['nombre'] : null; // TEXTO
         $resena = isset($post['reseña']) ? $post['reseña'] : null;  // TEXTO
         $valoracion = isset($post['valoracion']) ? $post['valoracion'] : null; // NÚMERO
         $numeros = isset($post['numeros']) ? $post['numeros'] : null; // NÚMERO
+        $diaEstreno = isset($post['dia']) ? $post['dia'] : null; // MÚLTIPLE
+        $generos = isset($post['generos']) ? $post['generos'] : null; // MÚLTIPLE
+
 
         //Estructura del formulario.
         array_push($this->valores, new Texto       ($nombre,"nombre", Texto::LONG_NOMBRE));
         array_push($this->valores, new Texto       ($resena, "reseña", Texto::LONG_DESCRIPCION));
         array_push($this->valores, new Numero      ($valoracion, "valoracion", Numero::TYPE_RANGE, Numero::MIN_DEFAULT_0, Numero::MAX_5));
         array_push($this->valores, new Numero      ($numeros, "numeros", Numero::TYPE_NUMBER, Numero::MIN_DEFAULT_0, Numero::MAX_5));
+        array_push($this->valores, new Multiple    ($diaEstreno, "dia", Multiple::TYPE_SELECT, ["L","M","X","J","V","S","D"]));
+        array_push($this->valores, new Multiple    ($generos, "generos", Multiple::TYPE_CHECKBOX, ["Comedia", "Terror", "Misterio", "Suspense", "Acción", "Otros"]));
     }
 
     public function getValores() { return $this->valores; }

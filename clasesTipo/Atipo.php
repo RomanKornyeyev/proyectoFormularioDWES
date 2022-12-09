@@ -3,9 +3,9 @@ namespace clasesTipo;
 
 abstract class Atipo
 {
-    protected $error;
-    protected $name;
-    protected $valor;
+    protected $error; //error personalizado por cada campo
+    protected $name; //name en HTML
+    protected $valor; //nombre variable (ej: $diaEstreno)
 
     public function __construct($valor = "", $name = "") {
         $this->valor = $valor;

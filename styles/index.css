@@ -37,12 +37,20 @@ table, tr, td{
 }
 
 /* === estilos específicos === */
-textarea, input[type], button{
+textarea, input, button{
     padding: 15px;
     width: 100%;
     max-width: 100%;
     border: 1px solid var(--gray);
 }
+
+select{
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.5rem;
+}
+
+input[type='checkbox']{width: auto; margin-right: 1.5rem;}
 
 .submit{width: 25rem !important;}
 
