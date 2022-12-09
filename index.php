@@ -11,9 +11,9 @@ spl_autoload_register(function ($class) {
 
 // ----------------------------------------------
 //Herramientas para debugging!
-echo "Valores añadidos al post: ";
-print_r($_POST); 
-echo ("<hr>"); 
+// echo "Valores añadidos al post: ";
+// print_r($_POST); 
+// echo ("<hr>"); 
 // ----------------------------------------------
 
 $serie = new clasesPadre\Formulario($_POST);
@@ -21,8 +21,8 @@ $serie = new clasesPadre\Formulario($_POST);
 if ($serie->validarGlobal()) {
     //importante guardar la lista del objeto y no $_POST, para guardar solamente valores de los input
     //y así evitar guardar "Enviar" del input submit
-    $serie->guardar($serie->getValores); //hacer guardar; que guarde los valores en un archivo de texto.
-    header("Location: tablaSeries.php");
+    $serie->guardar($_POST); //hacer guardar; que guarde los valores en un archivo de texto.
+    //header("Location: tablaSeries.php");
 }
 
 ?>

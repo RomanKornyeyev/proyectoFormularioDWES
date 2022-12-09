@@ -63,7 +63,6 @@ class Formulario
     //guardado en BD
     public function guardar($post){
 
-
         $file = 'bbdd.txt';
 
         // Open the file to get existing content
@@ -72,15 +71,17 @@ class Formulario
         // Append a new series to the file
         $current .= "<tr>";
         foreach ($post as $key => $value) {
-                if ($key != 'generos' && $key != 'submit') {
-                    $current .= "<td>" . $value . "</td>\n";
-                } else {
-                    $current .= "<td>";
-                    foreach ($post['generos'] as $genero) {
-                        $current .= $genero . " ";
-                    }
-                    $current .= "</td>";
+            //si no es checkbox 
+            if ($key != 'generos' && $key != 'submit') {
+                $current .= "<td>" . $value . "</td>\n";
+            //si es checkbox 
+            } else if ($key != 'submit'){
+                $current .= "<td>";
+                foreach ($post['generos'] as $genero) {
+                    $current .= $genero . " ";
                 }
+                $current .= "</td>";
+            }
         }
 
         $current .= "</tr>";
