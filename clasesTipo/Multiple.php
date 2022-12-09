@@ -18,12 +18,12 @@ class Multiple extends Atipo
         }
     }
 
+    public function getTipo() { return $this->tipo; }
+
     public function validarEspecifico($value){
         $esValido = true;
         //si es string, es select
         if (is_string($value)){
-            // print_r($this->arr);
-            // print_r($value);
             //el select devuelve un único String, comprobamos que ese String devuelto esté en el array con el que se inicializó
             if (in_array($value, $this->arr)) {
                 $esValido = true;
@@ -35,8 +35,6 @@ class Multiple extends Atipo
             return $esValido;
         //si es array, es checkbox
         }else {
-            print_r($this->arr);
-            print_r($value);
             //si uno de los valores del checkbox no es válido, la validación devuelve false
             foreach ($value as $valor) {
                 if (!(in_array($valor, $this->arr)))

@@ -11,7 +11,7 @@ class Formulario
 {
 
     private $valores = array();
-    private $esValida = true;
+    //private $esValida = true;
 
     public function __construct($post){
         //Si no tenemos post, inicializo cada valor como null para no tener problemas.
@@ -31,6 +31,7 @@ class Formulario
         array_push($this->valores, new Numero      ($numeros, "numeros", Numero::TYPE_NUMBER, Numero::MIN_DEFAULT_0, Numero::MAX_5));
         array_push($this->valores, new Multiple    ($diaEstreno, "dia", Multiple::TYPE_SELECT, ["L","M","X","J","V","S","D"]));
         array_push($this->valores, new Multiple    ($generos, "generos", Multiple::TYPE_CHECKBOX, ["Comedia", "Terror", "Misterio", "Suspense", "Acción", "Otros"]));
+
     }
 
     public function getValores() { return $this->valores; }
@@ -63,6 +64,7 @@ class Formulario
     //guardado en BD
     public function guardar($post){
 
+        // Path to the "DB"
         $file = 'bbdd.txt';
 
         // Open the file to get existing content
@@ -71,20 +73,24 @@ class Formulario
         // Append a new series to the file
         $current .= "<tr>";
         foreach ($post as $key => $value) {
-            //si no es checkbox 
-            if ($key != 'generos' && $key != 'submit') {
-                $current .= "<td>" . $value . "</td>\n";
-            //si es checkbox 
-            } else if ($key != 'submit'){
-                $current .= "<td>";
-                foreach ($post['generos'] as $genero) {
-                    $current .= $genero . " ";
+            
+            //GUARDA TODOS LOS PARÁMETROS MENOS EL SUBMIT (botón submit)
+            if ($key != 'submit' ) {
+                //si no es checkbox (no es un array, recibe una opción)
+                if (!is_array($value)) {
+                    $current .= "<td>" . $value . "</td>\n";
+                //si es checkbox (es un array, recibe varias opciones)
+                } else {
+                    $current .= "<td>";
+                    foreach ($post['generos'] as $genero) {
+                        $current .= $genero . " ";
+                    }
+                    $current .= "</td>";
                 }
-                $current .= "</td>";
-            }
+            } 
         }
-
         $current .= "</tr>";
+
         // Write the contents back to the file
         file_put_contents($file, $current);
 

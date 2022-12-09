@@ -3,69 +3,65 @@
 <td>J</td>
 <td>1</td>
 <td>Le falta gancho</td>
-<td>off</td>
-<tr><td>Serie Genial</td>
-<td>Romantico </td><td>Netflix</td>
-<td>L</td>
-<td>5</td>
-<td>Es genial.</td>
-<td>off</td>
-</tr><tr><td>dasdasd</td>
-<td>asdasd24</td>
-<td>off</td>
-</tr><tr><td>ASDASD</td>
-<td>ADSDADASD</td>
-<td>Enviar</td>
-<td>off</td>
-</tr><tr><td>sdasdasd</td>
-<td>asdasda</td>
-<td>5</td>
-<td>5</td>
-<td>Enviar</td>
-<td>off</td>
-</tr><tr><td>asdasdas</td>
-<td>dasdasdasdasdasd</td>
-<td>5</td>
-<td>5</td>
-<td>Enviar</td>
-<td>off</td>
-</tr><tr><td>asdasdaas</td>
-<td>dasdasdasda</td>
-<td>0</td>
-<td>5</td>
-<td>Enviar</td>
-</tr><tr><td>asdasdasd</td>
-<td>asdasd</td>
+<td>off</td></tr>
+<tr><td>sdasdasd</td>
+<td>asdasdasd</td>
 <td>4</td>
 <td>1</td>
-<td></td>
-</tr><tr><td>asdasd</td>
+<td>L</td>
+<td>Terror </td></tr><tr><td>sdasdasd</td>
 <td>asdasdasd</td>
-<td>3</td>
-<td>2</td>
-<td></td></tr><tr><td>asdasd</td>
-<td>adasdasd</td>
+<td>4</td>
+<td>1</td>
+<td>L</td>
+<td>Terror </td></tr><tr><td>sdasdasd</td>
+<td>asdasdasd</td>
+<td>4</td>
+<td>1</td>
+<td>L</td>
+<td>Terror </td></tr><tr><td>sdasdasd</td>
+<td>asdasdasd</td>
+<td>4</td>
+<td>1</td>
+<td>L</td>
+<td>Terror </td></tr><tr><td>sdasdasd</td>
+<td>asdasdasd</td>
+<td>4</td>
+<td>1</td>
+<td>L</td>
+<td>Terror </td></tr><tr><td>asdasd</td>
+<td>asdasdasdasd</td>
 <td>3</td>
 <td>1</td>
-</tr><tr><td>asdasd</td>
-<td>123123</td>
+<td>L</td>
+<td>Otros </td></tr><tr><td>aslkdjasl</td>
+<td>lkdjalsdkj</td>
 <td>3</td>
 <td>1</td>
-<tr></tr><tr></tr><tr></tr><tr></tr><tr><td>asdasdasd</td>
-<td>aasdasd</td>
+<td>L</td>
+<td>Misterio Acción Otros </td></tr><tr><td>asdasdas</td>
+<td>dasdasdasd</td>
 <td>3</td>
 <td>1</td>
-<td></td></tr><tr><td>asdasdasd</td>
-<td>aasdasd</td>
+<td>L</td>
+<td>Comedia Otros </td></tr><tr><td>sadasdasd1</td>
+<td>123123123123</td>
 <td>3</td>
 <td>1</td>
-<td></td></tr><tr><td>asasdasd</td>
-<td>123123</td>
+<td>L</td>
+<td>Comedia Terror </td></tr><tr><td>sadasdasd1</td>
+<td>123123123123</td>
 <td>3</td>
 <td>1</td>
-</tr><tr><td>asdasd</td>
-<td>dadadasd</td>
-<td>0</td>
+<td>L</td>
+<td>Comedia Terror </td></tr><tr><td>sadasdasd1</td>
+<td>123123123123</td>
+<td>3</td>
+<td>1</td>
+<td>L</td>
+<td>Comedia Terror </td></tr><tr><td>sadasdasd1</td>
+<td>123123123123</td>
+<td>3</td>
 <td>1</td>
 <td>L</td>
 <td>Comedia Terror </td></tr>
