@@ -22,7 +22,7 @@ if ($serie->validarGlobal()) {
     //importante guardar la lista del objeto y no $_POST, para guardar solamente valores de los input
     //y así evitar guardar "Enviar" del input submit
     $serie->guardar($_POST); //hacer guardar; que guarde los valores en un archivo de texto.
-    //header("Location: tablaSeries.php");
+    header("Location: tablaSeries.php");
 }
 
 ?>
