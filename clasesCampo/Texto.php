@@ -1,5 +1,5 @@
 <?php
-namespace clasesTipo;
+namespace clasesCampo;
 
 class Texto extends Atipo
 {

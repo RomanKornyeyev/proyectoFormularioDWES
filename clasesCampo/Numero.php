@@ -1,6 +1,6 @@
 <?php
 
-namespace clasesTipo;
+namespace clasesCampo;
 
 class Numero extends Atipo {
 

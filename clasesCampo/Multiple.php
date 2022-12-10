@@ -1,6 +1,6 @@
 <?php
 
-namespace clasesTipo;
+namespace clasesCampo;
 
 class Multiple extends Atipo
 {

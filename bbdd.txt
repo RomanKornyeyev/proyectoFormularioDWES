@@ -3,4 +3,14 @@
 <td>J</td>
 <td>1</td>
 <td>Le falta gancho</td>
-<td>off</td></tr>
+<td>off</td></tr><tr><td>roman</td>
+<td>pruebas</td>
+<td>3</td>
+<td>1</td>
+<td>L</td>
+<td>Comedia Acción </td></tr><tr><td>z</td>
+<td>11231</td>
+<td>3</td>
+<td>1</td>
+<td>L</td>
+<td>Comedia </td></tr>

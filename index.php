@@ -16,7 +16,7 @@ spl_autoload_register(function ($class) {
 // echo ("<hr>"); 
 // ----------------------------------------------
 
-$serie = new clasesPadre\Formulario($_POST);
+$serie = new clasesMain\Formulario($_POST);
 
 if ($serie->validarGlobal()) {
     //importante guardar la lista del objeto y no $_POST, para guardar solamente valores de los input

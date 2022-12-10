@@ -1,11 +1,11 @@
 <?php
 
 
-namespace clasesPadre;
+namespace clasesMain;
 
-use clasesTipo\Texto;
-use clasesTipo\Numero;
-use clasesTipo\Multiple;
+use clasesCampo\Texto;
+use clasesCampo\Numero;
+use clasesCampo\Multiple;
 
 class Formulario
 {
