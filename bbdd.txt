@@ -1,3 +1,3 @@
-sadasda;s;3;1;L;Terror ;
-asdas;ddasdasd;3;1;L;Comedia Terror ;
-asdasd;a;3;1;L;Comedia ;
+atipico;bastante guay jeje;10;1;Comedia Otros ;No;Netflix;
+breaking bad;un poco descafeinada, por como me la pintaban;8;1;Acción Otros ;No;Netflix;
+better call saul;bastante bien, en mi opinion, es mejor que breaking bad;10;1;Comedia Acción Otros ;No;Netflix;

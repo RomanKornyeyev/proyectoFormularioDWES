@@ -37,12 +37,12 @@ Y la función de que te avise si hay capítulo de serie el día de la semana.-->
         <thead>
             <tr>
                 <th scope="col">Nombre</th>
-                <th scope="col">Géneros</th>
-                <th scope="col">Plataforma</th>
-                <th scope="col">Día de la semana</th>
+                <th scope="col">Reseña</th>
                 <th scope="col">Nota</th>
-                <th scope="col">Valoración</th>
+                <th scope="col">Veces vista</th>
+                <th scope="col">Géneros</th>
                 <th scope="col">¿En emisión?</th>
+                <th scope="col">Plataforma</th>
             </tr>
         </thead>
         <tbody>
@@ -55,7 +55,9 @@ Y la función de que te avise si hay capítulo de serie el día de la semana.-->
                         echo "<tr>";
                         $linea = explode(";", $value);
                         foreach ($linea as $valor){ //divide CADA VALOR de la LÍNEA
-                            echo "<td>".$valor."</td>";
+                            if($valor != ""){
+                                echo "<td>".$valor."</td>";
+                            }
                         }
                         echo "<tr>";
                     }
