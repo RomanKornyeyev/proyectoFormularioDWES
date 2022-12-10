@@ -45,11 +45,23 @@ Y la función de que te avise si hay capítulo de serie el día de la semana.-->
                 <th scope="col">¿En emisión?</th>
             </tr>
         </thead>
-        <?php
-    $file = 'bbdd.txt';
-    $current = file_get_contents($file);
-    echo $current;
-    ?>
+        <tbody>
+            <?php
+                $file = 'bbdd.txt';
+                $current = file_get_contents($file); //devuelve un string con toda la info del .txt
+                $lista = explode("\n", $current); //divide las LÍNEAS de todo el string
+                foreach ($lista as $value) {
+                    if ($value != ""){ //la última línea está vacía, para evitar pintar otro tr y td, ponemos un if
+                        echo "<tr>";
+                        $linea = explode(";", $value);
+                        foreach ($linea as $valor){ //divide CADA VALOR de la LÍNEA
+                            echo "<td>".$valor."</td>";
+                        }
+                        echo "<tr>";
+                    }
+                }
+            ?>
+        </tbody>
     </table>
     </div>
 </body>

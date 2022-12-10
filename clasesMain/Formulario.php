@@ -71,25 +71,22 @@ class Formulario
         $current = file_get_contents($file);
 
         // Append a new series to the file
-        $current .= "<tr>";
         foreach ($post as $key => $value) {
-            
             //GUARDA TODOS LOS PARÁMETROS MENOS EL SUBMIT (botón submit)
             if ($key != 'submit' ) {
                 //si no es checkbox (no es un array, recibe una opción)
                 if (!is_array($value)) {
-                    $current .= "<td>" . $value . "</td>\n";
+                    $current .= $value . ";";
                 //si es checkbox (es un array, recibe varias opciones)
                 } else {
-                    $current .= "<td>";
                     foreach ($post['generos'] as $genero) {
-                        $current .= $genero . " ";
+                        $current .= $genero." ";
                     }
-                    $current .= "</td>";
+                    $current .= ";";
                 }
             } 
         }
-        $current .= "</tr>";
+        $current .= "*end*\n";
 
         // Write the contents back to the file
         file_put_contents($file, $current);
